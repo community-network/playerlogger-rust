@@ -1,0 +1,28 @@
+[package]
+name = "playerlogger-rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.66"
+lapin = "2.1.1"
+mongodb = "2.3.1"
+flexi_logger = "0.24.0"
+log = "0.4.13"
+futures = "0.3.17"
+chrono = "0.4.22"
+amq-protocol-types = "7.0.1"
+
+[dependencies.bson]
+version = "2.4.0"
+features = ["chrono-0_4"]
+
+[dependencies.tokio]
+version = "1.7"
+features = ["full"]
+
+[dependencies.serde]
+version = "1.0.126"
+features = ["derive"]
