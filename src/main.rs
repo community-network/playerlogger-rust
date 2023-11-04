@@ -7,7 +7,7 @@ use bson::Document;
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
-    const MONGO_URL: &str = "mongodb://zjobse:x4YfuHA2jYWAnj3d@194.242.57.80:27017,194.242.57.81:27017,194.242.57.82:27017/serverManager?replicaSet=replica01&authSource=admin";
+    const MONGO_URL: &str = "mongodb://zjobse:LZb7w8APTz4GdhtEj5B9aQ@161.97.144.206:27017";
     // Try connect to mongo client
     let client = Client::with_uri_str(MONGO_URL).await?;
     let db = client.database("serverManager");
