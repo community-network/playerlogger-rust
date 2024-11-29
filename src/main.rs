@@ -1,9 +1,9 @@
-use std::time::Duration;
-
 use bson::Document;
 use chrono::Local;
 use futures::StreamExt;
 use mongodb::{options::IndexOptions, Client, Collection, IndexModel};
+use std::env;
+use std::time::Duration;
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
