@@ -9,7 +9,7 @@ use std::time::Duration;
 async fn main() -> anyhow::Result<()> {
     match dotenvy::dotenv() {
         Ok(_) => {}
-        Err(_) => log::info!(".env not found, using env variables..."),
+        Err(_) => println!(".env not found, using env variables..."),
     };
 
     let mongo_url = env::var("MONGO_DETAILS_STRING").expect("MONGO_DETAILS_STRING wasn't set"); //
